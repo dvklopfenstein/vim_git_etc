@@ -36,3 +36,13 @@ $ git log --summary --reverse -- src/bin/bash_text_colors.py
 $ git show c34875b5aa8663a82a147d4f05953c38cf3a0ba3 -- src/bin/bash_text_colors.py | tee bash_text_colors.py
 $ git checkout c34875b5aa8663a82a147d4f05953c38cf3a0ba3~1 -- src/bin/bash_text_colors.py
 '''
+
+### [Remotes](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+'''
+$ git remote -v
+$ git remote add dampierlab [ssh]
+$ git push dampierlab main
+$ git push dampierlab 
+$ git remote add both [ssh]
+$ git remote set-url --push both [http]
+'''
