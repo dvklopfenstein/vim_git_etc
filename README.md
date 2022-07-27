@@ -33,11 +33,12 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 '''
 $ git log --diff-filter=D --summary --reverse | grep delete
 $ git log --summary --reverse -- src/bin/bash_text_colors.py
-$ git show c34875b5aa8663a82a147d4f05953c38cf3a0ba3 -- src/bin/bash_text_colors.py | tee bash_text_colors.py
-$ git checkout c34875b5aa8663a82a147d4f05953c38cf3a0ba3~1 -- src/bin/bash_text_colors.py
+$ git show [hash] -- src/bin/bash_text_colors.py | tee bash_text_colors.py
+$ git checkout [hash]~1 -- src/bin/bash_text_colors.py
 '''
 
 ### [Remotes](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+* https://stackoverflow.com/questions/14290113/git-pushing-code-to-two-remotes
 '''
 $ git remote -v
 $ git remote add dampierlab [ssh]
@@ -46,3 +47,28 @@ $ git push dampierlab
 $ git remote add both [ssh]
 $ git remote set-url --push both [http]
 '''
+
+```
+$ git config --list
+$ git config user.name
+$ git config user.email
+$ git config --global user.name <user_name>
+$ git config --local user.name <user_name>
+```
+
+## bash
+### args
+```
+!^      first argument
+!$      last argument
+!*      all arguments
+!:2     second argument
+
+!:2-3   second to third arguments
+!:2-$   second to last arguments
+!:2*    second to last arguments
+!:2-    second to next to last arguments
+
+!:0     the command
+!!      repeat the previous line
+```
