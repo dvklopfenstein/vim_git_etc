@@ -28,6 +28,7 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 * [Learn vim script the hard way](https://learnvimscriptthehardway.stevelosh.com/chapters/19.html)
 
 ## git
+* `git commit --amend -m 'Replaces last commit msg'
 
 ### Find deleted files
 '''
