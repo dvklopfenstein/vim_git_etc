@@ -57,6 +57,10 @@ $ git config --global user.name <user_name>
 $ git config --local user.name <user_name>
 ```
 
+```
+$ git branch -d <branch_name>
+```
+
 ## bash
 ### args
 ```
