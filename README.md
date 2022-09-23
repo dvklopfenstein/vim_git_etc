@@ -77,3 +77,16 @@ $ git branch -d <branch_name>
 !:0     the command
 !!      repeat the previous line
 ```
+
+## git
+### How can I print a plain list of all files that were part of a given commit?
+* git diff-tree --no-commit-id --name-only -r bd61ad98 # Preferred (plumbing command) programmatic
+* git diff-tree --no-commit-id --name-only -r bd61ad98 # Porcelain; user facing
+
+### List files tracked by git
+* git ls-files # List files tracked by git
+* git ls-files --other # List files NOT tracked by git
+* git diff --name-only --diff-filter=u  # Show modified, unstaged files, and only the filenames
+* git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
+
+* git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
