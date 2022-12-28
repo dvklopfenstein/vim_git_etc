@@ -5,6 +5,8 @@
   * [Find deleted files](#find-deleted-files)
 
 ## vim
+* `:ls` see the list of current buffers
+* `:reg` see the current contents of your registers
 
 ### [Placing current line at top/center/bottom of screen in vim](https://unix.stackexchange.com/questions/110251/how-to-put-current-line-at-top-center-bottom-of-screen-in-vim)
 :help scroll-cursor    
