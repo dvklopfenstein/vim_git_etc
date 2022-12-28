@@ -90,3 +90,9 @@ $ git branch -d <branch_name>
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
 
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
+
+
+## awk
+gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]    
+("Human immunodeficiency virus 1"[Organism] OR "Human immunodeficiency virus 2"[Organism] OR "Simian-Human immunodeficiency virus"[Organism] OR HIV[All Fields]) AND 9606[Taxonomy ID] AND ("genetype protein coding"[Properties] AND alive[prop])    
+* awk -F '\t' '{printf "%15-s %s\n", $6, $8}' gene_result.txt   # Print Gene Symbol and Description
