@@ -69,8 +69,13 @@ $ git config --global user.name <user_name>
 $ git config --local user.name <user_name>
 ```
 
+
+### Branches
 ```
-$ git branch -d <branch_name>
+$ git branch -d <branch_name>  # Delete local branch if it has been fully merged
+$ git branch -D <branch_name>  # Delete local branch irrespective of its merged status
+$ git push <remote_name> --delete <branch_name>  # or
+$ git push -d <remote_name> <branch_name>
 ```
 
 ## bash
@@ -98,9 +103,10 @@ $ git branch -d <branch_name>
 ### List files tracked by git
 * git ls-files # List files tracked by git
 * git ls-files --other # List files NOT tracked by git
+* git diff --name-only --diff-filter=U  # Show Unmerged files (--relative to show paths from cwd)
+* git diff --check     # show the list of files containing conflict markers including line numbers.
 * git diff --name-only --diff-filter=u  # Show modified, unstaged files, and only the filenames
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
-
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
 
 
