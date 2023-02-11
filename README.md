@@ -1,6 +1,6 @@
 # vim, git, etc.
 
-## Workflows with git
+## Common workflows with git
 
 * [Use git to manage and backup your work](#use-git-to-manage-and-backup-your-work)
 * [Accept someone else's edits to your code](#accept-someone-elses-edits-to-your-code)
