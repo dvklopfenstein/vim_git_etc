@@ -2,8 +2,8 @@
 
 ## Workflows with git
 
-* [Using git to manage and backup your work](#using-git-to-manage-and-backup-your-work)
-* [Accepting someone else's edits to your code](#accepting-someone-elses-edits-to-your-code)
+* [Use git to manage and backup your work](#use-git-to-manage-and-backup-your-work)
+* [Accept someone else's edits to your code](#accept-someone-elses-edits-to-your-code)
 * **Pull Requests**
   * [You cannot push your code to others](#you-cannot-push-your-code-to-others-as-a-contributor)
   * [Ask to have your code edits accepted with a pull request (PR)](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
