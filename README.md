@@ -1,8 +1,4 @@
 # vim, git, etc.
-* [vim](#vim)
-  * [Place current line elsewhere](#placing-current-line-at-topcenterbottom-of-screen-in-vim)
-* [git](#git)
-  * [Find deleted files](#find-deleted-files)
 
 ## Workflows with git
 
