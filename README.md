@@ -19,8 +19,7 @@
 ![PR? and merge](/doc/images/git_pull.png)
 
 ### Asking somebody to accept your edits to their code
-#### You cannot push your code to others
-(as a contributor)
+#### You cannot push your code to others (as a contributor)
 ![No pushing!](/doc/images/Git_push_pull_fork_clone_bad.png)
 #### Ask to have your code edits accepted with a pull request
 ![](/doc/images/Git_push_pull_fork_clone.png)
