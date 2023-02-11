@@ -4,6 +4,26 @@
 * [git](#git)
   * [Find deleted files](#find-deleted-files)
 
+## Workflows with git
+
+* Using git to manage and backup your work
+* Accepting someone else's edits to your code
+* You cannot push your code without their permission    
+* Ask to have your code edits accepted with a pull request
+
+### Using git to manage and backup your work
+![git daily workflow](/doc/images/git_clone_commit_push.png)
+
+### Accepting someone else's edits to your code
+![PR? and merge](/doc/images/git_pull.png)
+
+### Asking somebody to accept your edits to their code
+#### You cannot push your code without their permission    
+![No pushing!](/doc/images/Git_push_pull_fork_clone_bad.png)
+#### Ask to have your code edits accepted with a pull request
+![](/doc/images/Git_push_pull_fork_clone.png)
+
+
 ## vim
 * `:ls` see the list of current buffers
 * `:reg` see the current contents of your registers
