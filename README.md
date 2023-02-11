@@ -32,6 +32,16 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 ## git
 * `git commit --amend -m 'Replaces last commit msg'
 
+## Pull Requests (PR)
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
+```
+git fetch origin pull/$PRID/head:$BRANCHNAME  # BRANCHNAME is new branch that you want to create
+git fetch origin pull/13/head:PR13
+
+# Get the filenames of new files from PR (leave out the deleted files)
+git --no-pager diff --diff-filter=D --name-only FETCH_HEAD $$(git merge-base FETCH_HEAD main)
+```
+
 ### Find deleted files
 '''
 $ git log --diff-filter=D --summary --reverse | grep delete
