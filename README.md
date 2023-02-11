@@ -6,7 +6,7 @@
 * [Accept someone else's edits to your code](#accept-someone-elses-edits-to-your-code)
 * **Pull Requests**
   * [You cannot push your code to others](#you-cannot-push-your-code-to-others-as-a-contributor)
-  * [Ask to have your code edits accepted with a pull request (PR)](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
+  * [Ask to have your code edits accepted using a pull request (PR)](#ask-to-have-your-code-edits-accepted-using-a-pull-request)
 
 ___
 ### Use git to manage and backup your work
@@ -21,7 +21,7 @@ ___
 #### You cannot push your code to others (as a contributor)
 ![No pushing!](/doc/images/Git_push_pull_fork_clone_bad.png)
 ___
-#### Ask to have your code edits accepted with a pull request
+#### Ask to have your code edits accepted using a pull request
 ![](/doc/images/Git_push_pull_fork_clone.png)
 
 
