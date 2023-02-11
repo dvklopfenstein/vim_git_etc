@@ -8,8 +8,9 @@
 
 * [Using git to manage and backup your work](#using-git-to-manage-and-backup-your-work)
 * [Accepting someone else's edits to your code](#accepting-someone-elses-edits-to-your-code)
-* [You cannot push your code without their permission    ](#you-cannot-push-your-code-without-their-permission)
-* [Ask to have your code edits accepted with a pull request](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
+* **Pull Requests (PR)**
+  * [You cannot push your code without their permission    ](#you-cannot-push-your-code-without-their-permission)
+  * [Ask to have your code edits accepted with a pull request](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
 
 ### Using git to manage and backup your work
 ![git daily workflow](/doc/images/git_clone_commit_push.png)
