@@ -9,7 +9,7 @@
 * [Using git to manage and backup your work](#using-git-to-manage-and-backup-your-work)
 * [Accepting someone else's edits to your code](#accepting-someone-elses-edits-to-your-code)
 * **Pull Requests (PR)**
-  * [You cannot push your code to others](#you-cannot-push-your-code-to-others)
+  * [You cannot push your code to others](#you-cannot-push-your-code-to-others-as-a-contributor)
   * [Ask to have your code edits accepted with a pull request](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
 
 ### Using git to manage and backup your work
