@@ -8,15 +8,19 @@
   * [You cannot push your code to others](#you-cannot-push-your-code-to-others-as-a-contributor)
   * [Ask to have your code edits accepted with a pull request (PR)](#ask-to-have-your-code-edits-accepted-with-a-pull-request)
 
+___
 ### Use git to manage and backup your work
 ![git daily workflow](/doc/images/git_clone_commit_push.png)
 
+___
 ### Accept someone else's edits to your code
 ![PR? and merge](/doc/images/git_pull.png)
 
+___
 ### Ask somebody to accept your edits to their code
 #### You cannot push your code to others (as a contributor)
 ![No pushing!](/doc/images/Git_push_pull_fork_clone_bad.png)
+___
 #### Ask to have your code edits accepted with a pull request
 ![](/doc/images/Git_push_pull_fork_clone.png)
 
