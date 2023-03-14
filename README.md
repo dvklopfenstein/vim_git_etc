@@ -53,6 +53,15 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 ## git
 * `git commit --amend -m 'Replaces last commit msg'
 
+### [Undo a commit & redo](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
+```
+$ git commit -m "Something terribly misguided" # (0: Your Accident)
+$ git reset HEAD~                              # (1)
+[ edit files as necessary ]                    # (2)
+$ git add .                                    # (3)
+$ git commit -c ORIG_HEAD                      # (4)
+```
+
 ## Pull Requests (PR)
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 ```
