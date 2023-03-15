@@ -56,10 +56,11 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 ### [Undo a commit & redo](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 ```
 $ git commit -m "Something terribly misguided" # (0: Your Accident)
-$ git reset HEAD~                              # (1)
-[ edit files as necessary ]                    # (2)
-$ git add .                                    # (3)
-$ git commit -c ORIG_HEAD                      # (4)
+$ git reset HEAD~                              # undo commit. LEAVE FILES ALONE AS IS. Will need to redo 'git add'
+[ edit files as necessary ]                    # 
+$ git add .                                    # Need to redo 'git add'
+$ git commit -c ORIG_HEAD                      # Commit changes, reusing old commit msg OR
+$ git --amend -m 'New commit msg'              # Commit changes, using new commit msg
 ```
 
 ## Pull Requests (PR)
