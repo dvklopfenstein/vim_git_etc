@@ -13,15 +13,16 @@ ___
 ![git daily workflow](/doc/images/git_clone_commit_push.png)
 
 ___
-### Accept someone else's edits to your code
+### Accept someone else's (dvklopfenstein's) edits to your (raefcon's) code
+`git pull` is 'git fetch` then `git merge'
 ![PR? and merge](/doc/images/git_pull.png)
 
 ___
-### Ask somebody to accept your edits to their code
+### Ask somebody (dvklopfenstein) to accept your (scbarrera) edits to their code
 #### You cannot push your code to others (as a contributor)
 ![No pushing!](/doc/images/Git_push_pull_fork_clone_bad.png)
 ___
-#### Ask to have your code edits accepted using a pull request
+#### Ask (dvklopfenstein) to have your (scbarrera) code edits accepted using a pull request
 ![](/doc/images/Git_push_pull_fork_clone.png)
 
 
@@ -52,6 +53,7 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 
 ## git
 * `git commit --amend -m 'Replaces last commit msg'
+* [git merge fast-forward vs git rebase](https://stackoverflow.com/questions/70627750/git-merge-fast-forward-vs-git-rebase)
 
 ### [Undo a commit & redo](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 ```
