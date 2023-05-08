@@ -145,3 +145,5 @@ $ git push -d <remote_name> <branch_name>
 gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]    
 ("Human immunodeficiency virus 1"[Organism] OR "Human immunodeficiency virus 2"[Organism] OR "Simian-Human immunodeficiency virus"[Organism] OR HIV[All Fields]) AND 9606[Taxonomy ID] AND ("genetype protein coding"[Properties] AND alive[prop])    
 * awk -F '\t' '{printf "%15-s %s\n", $6, $8}' gene_result.txt   # Print Gene Symbol and Description
+* awk -F"\t" '{print $1, $2, $3, $4, $5}' notebooks/goea_0.05_*_proteincoding_partof_sig_goids.txt
+* cut -f1-5 notebooks/goea_0.05_*_proteincoding_partof_sig_goids.txt
