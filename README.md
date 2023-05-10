@@ -142,6 +142,9 @@ $ git push -d <remote_name> <branch_name>
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
 
+## Bash cursor
+* ctrl-a Go to beginning of line
+* ctrl-e Go to end of line
 
 ## awk
 gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]    
