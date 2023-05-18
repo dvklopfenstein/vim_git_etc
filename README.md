@@ -142,6 +142,10 @@ $ git push -d <remote_name> <branch_name>
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
 
+## grep
+* grep -B 10 -A 5 build README.md  # report 10 lines before and 5 lines after lines containing build
+* grep -C 5 build README.md        # report  5 lines before and after lines containing build
+
 ## Bash cursor
 * ctrl-a Go to beginning of line
 * ctrl-e Go to end of line
@@ -152,3 +156,8 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 * awk -F '\t' '{printf "%15-s %s\n", $6, $8}' gene_result.txt   # Print Gene Symbol and Description
 * awk -F"\t" '{print $1, $2, $3, $4, $5}' notebooks/goea_0.05_*_proteincoding_partof_sig_goids.txt
 * cut -f1-5 notebooks/goea_0.05_*_proteincoding_partof_sig_goids.txt
+
+* awk '{print NR-1 "," $0}' README.md                    # print lines w/lnum prefixed (NR starts at 1)
+* awk '3288<=NR && NR<=3291 {print NR-1 ": " $0}' *.sam  # print specific line numbers
+* awk '3288<=NR && NR<=3291' *.sam                       # print specific line numbers
+* sed -n '3288,3291p' *.sam
