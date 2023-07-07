@@ -102,6 +102,13 @@ $ git config --global user.name <user_name>
 $ git config --local user.name <user_name>
 ```
 
+```
+$ git pull
+  git config pull.rebase false  # merge             $ git pull --no-rebase
+  git config pull.rebase true   # rebase            $ git pull --rebase
+  git config pull.ff only       # fast-forward only $ git pull --ff-only
+```
+
 
 ### Branches
 ```
