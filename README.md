@@ -76,12 +76,18 @@ git --no-pager diff --diff-filter=D --name-only FETCH_HEAD $$(git merge-base FET
 ```
 
 ### Find deleted files
-'''
+```
 $ git log --diff-filter=D --summary --reverse | grep delete
 $ git log --summary --reverse -- src/bin/bash_text_colors.py
 $ git show [hash] -- src/bin/bash_text_colors.py | tee bash_text_colors.py
 $ git checkout [hash]~1 -- src/bin/bash_text_colors.py
-'''
+```
+
+### git log
+Make a branch tree
+```
+$ git log --all --graph --decorate --oneline --simplify-by-decoration
+```
 
 ### [Remotes](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 * https://stackoverflow.com/questions/14290113/git-pushing-code-to-two-remotes
