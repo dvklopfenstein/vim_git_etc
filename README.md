@@ -70,6 +70,7 @@ $ git --amend -m 'New commit msg'              # Commit changes, using new commi
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 ```
 git fetch origin pull/$PRID/head:$BRANCHNAME  # BRANCHNAME is new branch that you want to create
+git fetch origin pull/$PRID/head:$BRANCHNAME --update-head-ok  # if fatal: refusing to fetch into branch 'refs/heads/main' checked out at ...
 git fetch origin pull/13/head:PR13
 
 # Get the filenames of new files from PR (leave out the deleted files)
