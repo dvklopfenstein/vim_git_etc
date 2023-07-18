@@ -54,6 +54,7 @@ zb                    | puts current line to bottom of screen, but leave cursor 
 ## git
 * `git commit --amend -m 'Replaces last commit msg'
 * [git merge fast-forward vs git rebase](https://stackoverflow.com/questions/70627750/git-merge-fast-forward-vs-git-rebase)
+* [Resolving a merge conflict using the command line](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
 
 ### [Undo a commit & redo](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 ```
