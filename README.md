@@ -109,6 +109,7 @@ $ git config --global user.name <user_name>
 $ git config --local user.name <user_name>
 ```
 
+### [git pull](https://stackoverflow.com/questions/71768999/how-to-merge-when-you-get-error-hint-you-have-divergent-branches-and-need-to-s)
 ```
 $ git pull
   git config pull.rebase false  # merge             $ git pull --no-rebase
