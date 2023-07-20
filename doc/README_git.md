@@ -79,6 +79,7 @@ Unmerged paths:
        	both modified:   doc/README_week01.md
 
 # --------------------------------------------------------------------------------
+$ git add .
 $ git commit -a -m 'rm conflict in doc/README_week01.md'
 [main 7cbef13] rm conflict in doc/README_week01.md
 
