@@ -9,6 +9,7 @@ $ git merge upstream/main
 $ vim -p doc/README_week01.md
 $ git rm LINKS_SLIDES_etc.md
 $ git commit -a -m 'rm conflict in doc/README_week01.md & rm new file'
+$ git push origin BRANCHNAME
 
 
 ```
