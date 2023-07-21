@@ -177,6 +177,15 @@ $ git push -d <remote_name> <branch_name>
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
 
+### If default branch on GitHub is renamed (master->main), do this on your local clone to update:
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
+## git and Jupter notebooks
+* http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/
+
 ## grep
 * grep -B 10 -A 5 build README.md  # report 10 lines before and 5 lines after lines containing build
 * grep -C 5 build README.md        # report  5 lines before and after lines containing build
