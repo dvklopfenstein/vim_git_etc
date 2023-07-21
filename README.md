@@ -86,7 +86,26 @@ $ git checkout [hash]~1 -- src/bin/bash_text_colors.py
 ```
 
 ### git log
-Make a branch tree
+####See things missing in main that are on dvk_git
+Try to delete branch, dvk_git, while on branch main. But dvk_git has commits main does not.
+See a graph using `git log` of what you are missing...
+```
+$ git branch
+  dvk_git
+* main
+
+$ git log --graph --left-right --cherry-pick --oneline main...dvk_git
+< 3b19970 (HEAD -> main) Add copyright & clean up makefile
+> 36e20e4 (origin/dvk_git, dvk_git) Added forks
+>   d7ece74 (upstream/main) Merge branch 'dvk_git' of dvklopfenstein/OMICS_dev into main
+|\
+| > 6ce87e7 Add make target for adding upstream remote (source repo)
+| > ae2b839 Add links to Instructor git flow
+> fcc49d5 Merge branch 'main' of dvklopfenstein/OMICS_dev into main
+
+```
+
+#### Make a branch tree visual
 ```
 $ git log --all --graph --decorate --oneline --simplify-by-decoration
 ```
