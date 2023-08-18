@@ -138,6 +138,14 @@ $ git pull
   git config pull.ff only       # fast-forward only $ git pull --ff-only
 ```
 
+### [Sync a forked origin to upstream](https://stackoverflow.com/questions/7244321/how-do-i-update-or-sync-a-forked-repository-on-github)
+```
+$ git remote -v
+$ git remote add upstream https://github.com/whoever/repo.git
+$ git fetch upstream main
+$ git checkout main
+$ git merge upstream/main
+
 ### Create a new repository on the command line
 
 ```
@@ -203,7 +211,8 @@ git branch -u origin/main main
 git remote set-head origin -a
 
 ## git and Jupter notebooks
-* http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/
+* http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/ nbconvert_jq
+* https://www.reviewnb.com/git-jupyter-notebook-ultimate-guide
 
 ## grep
 * grep -B 10 -A 5 build README.md  # report 10 lines before and 5 lines after lines containing build
@@ -224,3 +233,6 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 * awk '3288<=NR && NR<=3291 {print NR-1 ": " $0}' *.sam  # print specific line numbers
 * awk '3288<=NR && NR<=3291' *.sam                       # print specific line numbers
 * sed -n '3288,3291p' *.sam
+
+## find
+* find . -name notebooks -exec find {} -name \*.py \;
