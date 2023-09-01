@@ -204,6 +204,11 @@ $ git push -d <remote_name> <branch_name>
 * git diff --name-only --diff-filter=u --cached # Show modified, staged/cached files, and only the filenames
 * git diff --name-only --diff-filter=AM HEAD  # list 'git status -s' filenames only
 
+### color diff
+* git diff --color-words README.md
+* git diff --color-words old.txt new.txt
+
+
 ### If default branch on GitHub is renamed (master->main), do this on your local clone to update:
 git branch -m master main
 git fetch origin
