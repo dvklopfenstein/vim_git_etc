@@ -153,14 +153,14 @@ touch README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin http://10.11.19.24:3080/dvklopfenstein/OMICS_dev.git
+git remote add origin https://github.com/OMICS_dev.git
 git push -u origin master
 ```
 
 ### Push an existing repository from the command line
 
 ```
-git remote add origin http://10.11.19.24:3080/dvklopfenstein/OMICS_dev.git
+git remote add origin http://github.com/OMICS_dev.git
 git push -u origin master
 ```
 
@@ -241,3 +241,8 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 
 ## find
 * find . -name notebooks -exec find {} -name \*.py \;
+
+## virtual environments
+```
+```
+
