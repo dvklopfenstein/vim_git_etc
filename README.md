@@ -147,7 +147,6 @@ $ git checkout main
 $ git merge upstream/main
 
 ### Create a new repository on the command line
-
 ```
 touch README.md
 git init
@@ -155,6 +154,16 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/OMICS_dev.git
 git push -u origin master
+```
+
+### Backup onto a local repo
+```
+# Create a [bare repo](https://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/), which is optimized for sharing and has no working dir
+$ git init --bare ~/backup/myproject.git
+$ cd /path/to/existing/repo
+$ git remote add origin ~/backup/myproject.git
+$ git push origin master
+$ git clone ~/backup/myproject.git
 ```
 
 ### Push an existing repository from the command line
