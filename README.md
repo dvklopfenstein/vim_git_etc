@@ -153,7 +153,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/OMICS_dev.git
-git push -u origin master
+git push -u origin main
 ```
 
 ### Backup onto a local repo
@@ -162,7 +162,7 @@ git push -u origin master
 $ git init --bare ~/backup/myproject.git
 $ cd /path/to/existing/repo
 $ git remote add origin ~/backup/myproject.git
-$ git push origin master
+$ git push origin main
 $ git clone ~/backup/myproject.git
 ```
 
@@ -170,7 +170,7 @@ $ git clone ~/backup/myproject.git
 
 ```
 git remote add origin http://github.com/OMICS_dev.git
-git push -u origin master
+git push -u origin main
 ```
 
 
