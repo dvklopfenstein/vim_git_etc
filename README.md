@@ -205,6 +205,7 @@ $ git push -d <remote_name> <branch_name>
 * git diff-tree --no-commit-id --name-only -r bd61ad98 # Porcelain; user facing
 
 ### List files tracked by git
+* git checkout $(git ls-files -m)
 * git ls-files # List files tracked by git
 * git ls-files --other # List files NOT tracked by git
 * git diff --name-only --diff-filter=U  # Show Unmerged files (--relative to show paths from cwd)
@@ -249,6 +250,7 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 * sed -n '3288,3291p' *.sam
 
 ## find
+* find ~+ -type d   # Use bash's Tilde Expansion to get the absolute path of the surrent working directory
 * find . -name notebooks -exec find {} -name \*.py \;
 
 ## virtual environments
