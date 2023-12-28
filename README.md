@@ -218,12 +218,34 @@ $ git push -d <remote_name> <branch_name>
 * git diff --color-words README.md
 * git diff --color-words old.txt new.txt
 
-
 ### If default branch on GitHub is renamed (master->main), do this on your local clone to update:
 git branch -m master main
 git fetch origin
 git branch -u origin/main main
 git remote set-head origin -a
+
+## git plumbing
+description  # Only used by GitWeb program
+HEAD         # ref: refs/heads/main        Points to current branch
+config
+objects/     # All repo content
+objects/info # All repo content
+objects/pack # All repo content
+refs/        # Stores pointers to commint objects (branches, tags, remotes, ...)
+info/
+hooks/
+
+$ git ls-files    # Show .git/index: a sorted list of path names w/permissions and SHA1 of blob
+$ git cat-file -p 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+$ git cat-file -s 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+$ git cat-file -t 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+$ git count-objects -v
+$ git log --pretty=oneline
+$ git reflog
+$ git log -g
+$ git gc --auto
+$ git fsck --full
+
 
 ## git and Jupter notebooks
 * http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/ nbconvert_jq
