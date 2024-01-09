@@ -87,6 +87,10 @@ $ git checkout [hash]~1 -- src/bin/bash_text_colors.py
 
 ### git show
 ```
+$ git show HEX:filename
+```
+* https://stackoverflow.com/questions/424071/how-do-i-list-all-the-files-in-a-commit
+```
 $ git diff-tree --no-commit-id --name-only HEX -r # List all the files in a commit (plumbing)
 $ git show --pretty="" --name-only HEX            # List all the files in a commit (porcelain)
 ```
