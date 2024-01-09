@@ -85,6 +85,12 @@ $ git show [hash] -- src/bin/bash_text_colors.py | tee bash_text_colors.py
 $ git checkout [hash]~1 -- src/bin/bash_text_colors.py
 ```
 
+### git show
+```
+$ git diff-tree --no-commit-id --name-only HEX -r # List all the files in a commit (plumbing)
+$ git show --pretty="" --name-only HEX            # List all the files in a commit (porcelain)
+```
+
 ### git log
 ####See things missing in main that are on dvk_git
 Try to delete branch, dvk_git, while on branch main. But dvk_git has commits main does not.
