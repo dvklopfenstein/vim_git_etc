@@ -45,6 +45,13 @@ z-                    | puts current line to bottom of screen
 zb                    | puts current line to bottom of screen, but leave cursor in same col
 <line number>z<t|z|b> | puts <line number> at top, center, or bottom
 
+### Insert a line above a line that matches a pattern
+```
+:g/^def /norm O# some_comment<CR>
+or in sed
+$ sed -i '/^def /i # some_comment' filename.py
+```
+
 ## Games
 * https://vim-adventures
 
