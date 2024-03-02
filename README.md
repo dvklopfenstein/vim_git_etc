@@ -31,6 +31,7 @@ ___
 * `:reg` see the current contents of your registers
 * `:global/pat/normal O/insert
 *      `:g/pat/norm Oinserttxt
+* `gUiw` # global UPPERCASE inner(for entire word no matter cursor) word
 
 ### [Placing current line at top/center/bottom of screen in vim](https://unix.stackexchange.com/questions/110251/how-to-put-current-line-at-top-center-bottom-of-screen-in-vim)
 :help scroll-cursor    
