@@ -55,6 +55,15 @@ or in sed
 $ sed -i '/^def /i # some_comment' filename.py
 ```
 
+# gpg
+
+## Checking GCC download
+0. https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/  # Download latest compiler
+1. gpg gcc-13.2.0.tar.gz.sig  # Get public key name (01234578)
+2. gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 01234567  # Download public key
+3. gpg gcc-13.2.0.tar.gz.sig  # Look for "Good signature" this validates the download
+
+
 ## Games
 * https://vim-adventures
 
@@ -294,8 +303,4 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 ## find
 * find ~+ -type d   # Use bash's Tilde Expansion to get the absolute path of the surrent working directory
 * find . -name notebooks -exec find {} -name \*.py \;
-
-## virtual environments
-```
-```
 
