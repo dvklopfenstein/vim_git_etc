@@ -48,6 +48,15 @@ z-                    | puts current line to bottom of screen
 zb                    | puts current line to bottom of screen, but leave cursor in same col
 <line number>z<t|z|b> | puts <line number> at top, center, or bottom
 
+### Character based motions on the current line
+* `3fa` move forward to the third occurrence of character `a`
+* `ta` move forward to the character just before `a`
+* `3tx` move forward to the character just before the third occurrence of character `x`
+* `Fa` move backward to the character `a`
+* `Ta` move backward to the character just after `a`
+* `;` repeat previous `f` or `F` or `t` or `T` motion in the same direction
+* `,` repeat previous `f` or `F` or `t` or `T` motion in the opposite direction
+
 ### Insert a line above a line that matches a pattern
 ```
 :g/^def /norm O# some_comment<CR>
