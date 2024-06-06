@@ -94,6 +94,12 @@ $ git commit -c ORIG_HEAD                      # Commit changes, reusing old com
 $ git --amend -m 'New commit msg'              # Commit changes, using new commit msg
 ```
 
+### Show repo's toplevel dir; show git dir
+```
+$ git rev-parse --show-toplevel
+$ git rev-parse --git-dir
+```
+
 ## Pull Requests (PR)
 https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally
 ```
