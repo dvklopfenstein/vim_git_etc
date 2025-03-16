@@ -64,6 +64,17 @@ or in sed
 $ sed -i '/^def /i # some_comment' filename.py
 ```
 
+### [Inspect Character Under Cursor in Vim](https://vimtricks.com/p/inspect-character-under-cursor-in-vim/)
+```
+ga   # Show details about the character under the cursor
+:as  # Command mode version of the same
+```
+To replace the character with hex code `201c`:
+* enter `:s/[` to start our replacement
+* press `<ctrl-v>` to enter the hex code
+* followed by `u` and the code, `201c`
+* press <ctrl-v> `u201d to enter the closing quote. Lastly the rest of the substitution command: /"/g
+
 # gpg
 
 ## Checking GCC download
@@ -83,6 +94,8 @@ $ sed -i '/^def /i # some_comment' filename.py
 * `git commit --amend -m 'Replaces last commit msg'
 * [git merge fast-forward vs git rebase](https://stackoverflow.com/questions/70627750/git-merge-fast-forward-vs-git-rebase)
 * [Resolving a merge conflict using the command line](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
+* [A better Git workflow with rebase](https://www.themoderncoder.com/a-better-git-workflow-with-rebase/)
+* [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)
 
 ### [Undo a commit & redo](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 ```
@@ -147,6 +160,49 @@ $ git log --graph --left-right --cherry-pick --oneline main...dvk_git
 | > ae2b839 Add links to Instructor git flow
 > fcc49d5 Merge branch 'main' of dvklopfenstein/OMICS_dev into main
 
+```
+
+### [git stash](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)
+```
+$ git stash list               # List the stashes
+stash@{0}: WIP on dev: 2a49933 Update run for shorter trk
+
+$ git stash show               # Show the _files_ in the most recent stash
+ makefile | 1 +
+ 1 file changed, 1 insertion(+)
+
+$ git stash show -p            # Show the _changes_ of the most recent stach
+diff --git a/makefile b/makefile
+index 2bad6ec..e544b68 100644
+--- a/makefile
++++ b/makefile
+@@ -72,6 +72,7 @@ clean:
++       rm -f .timetracker_start
+
+$ git stash show -p stash@{0} # Show the _changes_ of the named stash
+$ git stash show -p 0
+diff --git a/makefile b/makefile
+index 2bad6ec..e544b68 100644
+--- a/makefile
++++ b/makefile
+@@ -72,6 +72,7 @@ clean:
++       rm -f .timetracker_start
+
+# List all conents of all local stashes
+$ git stash list | awk -F: '{ print "\n\n\n\n"; print $0; print "\n\n"; system("git stash show -p " $1); }'
+```
+
+### [List conflicting files](https://stackoverflow.com/questions/3065650/whats-the-simplest-way-to-list-conflicted-files-in-git)
+```
+$ git diff --name-only --diff-filter=U --relative
+makefile
+
+$ git diff --check
+makefile:135: leftover conflict marker
+makefile:142: leftover conflict marker
+makefile:144: leftover conflict marker
+
+$ git config --global alias.conflicts "diff --name-only --diff-filter=U"
 ```
 
 #### Make a branch tree visual
@@ -316,6 +372,8 @@ gene_result.txt is from NCBI Gene search: (HIV) AND 9606[Taxonomy ID]
 * sed -n '3288,3291p' *.sam
 
 ## find
+* find . -print0 2>/dev/null | xargs -0 grep -i something_to_find 2>/dev/null # files/dirs w spaces
+* find . -exec ls --color -d {} \;   # Color directories in a find
 * find ~+ -type d   # Use bash's Tilde Expansion to get the absolute path of the surrent working directory
 * find . -name notebooks -exec find {} -name \*.py \;
 
